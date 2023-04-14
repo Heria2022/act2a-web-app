@@ -21,13 +21,19 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>  
     <div id="mydiv"></div>
+    <div id="footer"></div>
 
     <script type="text/babel">
       function Hello() {
         return <h1 style={{color:"red"}}>The sum of 10 and 20 is: {10+20}</h1>;
       }
       
+      function Footer() {
+        return <h1 style={{color:"red"}}>This is a Footer.</h1>;
+      }
+      
       ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+      ReactDOM.render(<Footer />, document.getElementById('footer'))
     </script>
 
   </body>
